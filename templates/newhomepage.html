@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% extends 'Nav.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Nutrition Hub</title>
+    <link rel="stylesheet" href="style.css"> <!-- You can link your CSS file here -->
+</head>
+
+{% block body %}
+    <header align="center">
+        <h1>Welcome to Health & Nutrition Hub</h1>
+        <p>Empowering You to Live Your Healthiest Life</p>
+    </header>
+{% csrf_token %}
+    <nav align="center">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=tkWpqaO0BnY">Nutrition</a></li>
+            <li><a href="https://www.youtube.com/watch?v=h4INrEte2iQ">Fitness</a></li>
+            <li><a href="https://www.youtube.com/watch?v=HyW2Ab5JTFw">Wellness</a></li>
+            <li><a href="https://www.youtube.com/watch?v=gDyjMQzgX_Y">Recipes</a></li>
+        </ul>
+    </nav>
+
+    <section id="nutrition" align="center">
+        <h2>Nutrition</h2>
+        <p>Learn about balanced diets, superfoods, and healthy eating habits.</p>
+    </section>
+
+    <section id="fitness" align="center">
+        <h2>Fitness</h2>
+        <p>Discover workout routines, fitness tips, and ways to stay active.</p>
+    </section>
+
+    <section id="wellness" align="center">
+        <h2>Wellness</h2>
+        <p>Explore mental health, stress management, and holistic approaches to well-being.</p>
+    </section>
+
+    <section id="recipes" align="center">
+        <h2>Recipes</h2>
+        <p>Find delicious and nutritious recipes for every meal and dietary preference.</p>
+    </section>
+
+    <footer align="center">
+        <p>Join our community to start your journey towards better health today!</p>
+        <ul>
+            <li><a href="newsletter.html">Subscribe to our newsletter</a></li>
+            <li><a href="social_media.html">Follow us on social media</a></li>
+            <li><a href="forums.html">Join our forums</a></li>
+        </ul>
+    </footer>
+{% endblock %}
+
+</html>
+

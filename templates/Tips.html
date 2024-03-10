@@ -1,0 +1,62 @@
+{% extends 'Nav.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block body %}
+<br>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'Diet.jpeg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Eat a Balanced Diet</h5>
+        <p class="card-text">Focus on consuming a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, sugary snacks, and excessive intake of saturated and trans fats.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 59 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Stay Hydrated</h5>
+        <p class="card-text"> Drink plenty of water throughout the day to keep your body hydrated. Limit intake of sugary drinks and alcohol.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 59 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'Ex.jpeg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Regular Exercise</h5>
+        <p class="card-text">Engage in moderate exercise such as walking, swimming, or prenatal yoga, as long as your healthcare provider approves. Regular physical activity can help improve circulation, reduce stress, and promote overall well-being during pregnancy.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 59 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div><div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'yoga.jpeg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Manage Stress</h5>
+        <p class="card-text">Pregnancy can be a stressful time, so practice stress-reduction techniques such as deep breathing, meditation, or prenatal massage. Surround yourself with supportive friends and family members who can help alleviate stress.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated
+{% endblock %}
+</html>

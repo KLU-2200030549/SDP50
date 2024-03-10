@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'Navbar.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+{% block body %}
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to our health and nutrition website! We are dedicated to providing you with valuable information and resources to help you lead a healthy lifestyle.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to empower individuals to make informed choices about their health and nutrition by providing evidence-based information and practical tips.</p>
+
+        <h2>Our Team</h2>
+        <p>We are a team of passionate health and nutrition professionals who are committed to promoting wellness and helping others achieve their health goals.</p>
+        <ul>
+            <li><strong>Y.Siva Ganesh</strong> - Registered Dietitian</li>
+            <li><strong>D.Prem Sai</strong> - Certified Personal Trainer</li>
+            <li><strong>Dr G.Vinay</strong> - Medical Doctor</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions, suggestions, or feedback, please feel free to contact us:</p>
+        <ul>
+            <li>Email: sivaganeshyasam@gmail.com</li>
+            <li>Phone:+91 7816044521</li>
+            <li>Address: 123 Health St, Nutrition City, India</li>
+        </ul>
+
+        <h2>Connect With Us</h2>
+        <p>Follow us on social media to stay updated on the latest health and nutrition tips:</p>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </div>
+{% endblock %}
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% extends 'Navbar.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Health & Nutrition Hub</title>
+    <link rel="stylesheet" href=""> <!-- You can link your CSS file here -->
+</head>
+
+{% block body %}
+    <header>
+        <h1 align="center">Contact Us</h1>
+    </header>
+{% csrf_token %}
+    <main align="center">
+        <section>
+            <h3>Get in Touch</h3>
+            <p>We'd love to hear from you! Use the form below to send us a message.</p>
+
+            <form action="{% url 'feedbackfunction' %}" method="post">
+                {% csrf_token %}
+                <div class="control-group">
+                        <!-- Name -->
+                        <label class="control-label" for="name">Name</label>
+                        <div class="controls">
+                            <input type="text" id="name" name="name" placeholder="Enter your name" class="input-xlarge">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="control-group">
+                        <!-- E-mail -->
+                        <label class="control-label" for="email">E-mail</label>
+                        <div class="controls">
+                            <input type="text" id="email" name="email" placeholder="Enter your email" class="input-xlarge">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="control-group">
+                        <!-- Comments -->
+                        <label class="control-label" for="comments">Comments</label>
+                        <div class="controls">
+                            <textarea id="comments" name="comments" placeholder="Enter your comments" class="input-xlarge"></textarea>
+                        </div>
+                    </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section align="center">
+            <h2>Contact Information</h2>
+            <p>If you prefer other means of contact, you can reach out to us through:</p>
+            <ul>
+                <li>Email: sivaganeshyasam@gmail.com</li>
+                <li>Phone: +91 7816044521</li>
+                <li>Address: 123 Health Street, Nutrition City,AP,India</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer align="center">
+        <p>© 2024 Health & Nutrition Hub. All rights reserved.</p>
+    </footer>
+{% endblock %}
+
+</html>
